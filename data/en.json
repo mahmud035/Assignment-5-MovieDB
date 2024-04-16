@@ -1,0 +1,13 @@
+{
+  "sidebar": {
+    "Trending": "Trending",
+    "New Releases": "New Releases",
+    "Coming Soon": "Coming Soon",
+    "Favourites": "Favourites",
+    "Watch Later": "Watch Later"
+  },
+  "content": {
+    "Stream In HD": "Stream In HD",
+    "Download In HD": "Download In HD"
+  }
+}

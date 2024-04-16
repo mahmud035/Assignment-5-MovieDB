@@ -1,0 +1,13 @@
+{
+  "sidebar": {
+    "Trending": "চলমান",
+    "New Releases": "নতুন রিলিজ",
+    "Coming Soon": "শীঘ্রই আসছে",
+    "Favourites": "প্রিয়",
+    "Watch Later": "পরে দেখুন"
+  },
+  "content": {
+    "Stream In HD": "HD এ স্ট্রিম করুন",
+    "Download In HD": "HD এ ডাউনলোড করুন"
+  }
+}
