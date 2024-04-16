@@ -6,7 +6,7 @@ import NewReleaseIcon from '../public/assets/icons/newRelease.svg';
 import TrendingIcon from '../public/assets/icons/trending.svg';
 import WatchLaterIcon from '../public/assets/icons/watchLater.svg';
 
-const Sidebar = () => {
+const Sidebar = ({ sidebar }) => {
   return (
     <aside>
       <ul className="space-y-2">
@@ -21,7 +21,7 @@ const Sidebar = () => {
               height={24}
               alt="Trending icon"
             />
-            <span>Trending</span>
+            <span>{sidebar?.trending}</span>
           </Link>
         </li>
         <li>
@@ -35,7 +35,7 @@ const Sidebar = () => {
               height={24}
               alt="New release icon"
             />
-            <span>New Releases</span>
+            <span>{sidebar?.newReleases}</span>
           </Link>
         </li>
         <li>
@@ -49,7 +49,7 @@ const Sidebar = () => {
               height={24}
               alt="Comming soon"
             />
-            <span>Coming Soon</span>
+            <span>{sidebar?.comingSoon}</span>
           </Link>
         </li>
         <li>
@@ -63,7 +63,7 @@ const Sidebar = () => {
               height={24}
               alt="Favourites"
             />
-            <span>Favourites</span>
+            <span>{sidebar?.favourites}</span>
           </Link>
         </li>
         <li>
@@ -77,7 +77,7 @@ const Sidebar = () => {
               height={24}
               alt="WatchLater"
             />
-            <span>Watch Later</span>
+            <span>{sidebar?.watchLater}</span>
           </Link>
         </li>
       </ul>

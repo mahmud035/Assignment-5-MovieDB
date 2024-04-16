@@ -1,7 +1,9 @@
 import MovieDetails from '@/components/MovieDetails';
+import Sidebar from '@/components/Sidebar';
 import { movieList } from '@/data/data';
 import { getMovie } from '@/utils';
 import { notFound } from 'next/navigation';
+import { getDictionary } from '../../dictionaries/dictionaries';
 
 export const generateMetadata = ({ params: { movieId } }) => {
   const movie = getMovie(movieId);
@@ -25,7 +27,10 @@ export const generateStaticParams = () => {
   }));
 };
 
-const MovieDetailsPage = ({ params: { movieId, lang } }) => {
+const MovieDetailsPage = async ({ params: { movieId, lang } }) => {
+  const dictionary = await getDictionary(lang);
+  const sidebar = dictionary?.sidebar;
+
   const movie = movieList.results.find(
     (movie) => movie.id.toString() === movieId
   );
@@ -35,7 +40,12 @@ const MovieDetailsPage = ({ params: { movieId, lang } }) => {
     notFound();
   }
 
-  return <MovieDetails movieId={movieId} lang={lang} />;
+  return (
+    <>
+      <Sidebar sidebar={sidebar} />
+      <MovieDetails movieId={movieId} lang={lang} />
+    </>
+  );
 };
 
 export default MovieDetailsPage;

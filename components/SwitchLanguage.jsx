@@ -12,6 +12,7 @@ const SwitchLanguage = () => {
     const segments = pathname.split('/');
     console.log({ segments });
     segments[1] = locale;
+    console.log(segments.join('/'));
     return segments.join('/');
   };
 

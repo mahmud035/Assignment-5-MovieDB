@@ -4,13 +4,12 @@ import SunIcon from '../public/assets/icons/sun.svg';
 import Logo from '../public/assets/logo.svg';
 import Ring from '../public/assets/ring.svg';
 import ShoppingCartIcon from '../public/assets/shopping-cart.svg';
-import SwitchLanguage from './SwitchLanguage';
 
 const Header = () => {
   return (
     <header>
       <nav className="container flex items-center justify-between py-6 space-x-10">
-        <Link href="/movies">
+        <Link href="/">
           <Image src={Logo.src} width={139} height={26} alt="Logo" />
         </Link>
 
@@ -44,9 +43,7 @@ const Header = () => {
               />
             </Link>
           </li>
-          <li>
-            <SwitchLanguage />
-          </li>
+          <li>{/* <SwitchLanguage /> */}</li>
         </ul>
       </nav>
     </header>
