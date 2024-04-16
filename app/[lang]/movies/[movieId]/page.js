@@ -6,9 +6,16 @@ import { notFound } from 'next/navigation';
 export const generateMetadata = ({ params: { movieId } }) => {
   const movie = getMovie(movieId);
 
+  if (!movie) {
+    return {
+      title: 'Movie Details | MovieDB',
+      description: movie?.overview,
+    };
+  }
+
   return {
-    title: `${movie.title} | MovieDB`,
-    description: movie.overview,
+    title: `${movie?.title} | MovieDB`,
+    description: movie?.overview,
   };
 };
 

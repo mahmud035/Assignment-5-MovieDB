@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 const MovieNotFoundPage = () => {
   const pathname = usePathname();
   const pathnameArray = pathname.split('/');
-  console.log({ pathnameArray });
 
   return (
     <div className="flex flex-col items-center justify-center h-screen gap-4 -mt-20">

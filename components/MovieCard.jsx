@@ -16,8 +16,8 @@ const MovieCard = ({ movie }) => {
         alt="movie thumbnail"
       />
       <figcaption className="pt-4">
-        <h3 class="text-xl mb-1">{title}</h3>
-        <p class="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
+        <h3 className="mb-1 text-xl">{title}</h3>
+        <p className="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
         <div className="flex items-center mb-5 space-x-1">
           <Image src={StarIcon.src} width={14} height={14} alt="Star icon" />
           <Image src={StarIcon.src} width={14} height={14} alt="Star icon" />
