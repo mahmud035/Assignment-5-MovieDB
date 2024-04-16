@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <nav className="container flex items-center justify-between py-6 space-x-10">
-        <Link href="index.html">
+        <Link href="/movies">
           <Image src={Logo.src} width={139} height={26} alt="Logo" />
         </Link>
 

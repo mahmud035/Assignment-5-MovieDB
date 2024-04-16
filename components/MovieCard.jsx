@@ -4,7 +4,7 @@ import StarIcon from '../public/assets/star.svg';
 import TagIcon from '../public/assets/tag.svg';
 
 const MovieCard = ({ movie }) => {
-  const { id, poster_path, title } = movie;
+  const { id, poster_path, title } = movie || {};
 
   return (
     <figure className="p-4 border shadow-sm border-black/10 dark:border-white/10 rounded-xl">
