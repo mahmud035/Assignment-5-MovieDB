@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import MovieList from '@/components/MovieList';
 import Sidebar from '@/components/Sidebar';
 
-const HomePage = () => {
+const HomePage = async () => {
   return (
     <>
       <Header />
