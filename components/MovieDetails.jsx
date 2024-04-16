@@ -1,13 +1,6 @@
 import { getDictionary } from '@/app/[lang]/dictionaries/dictionaries';
-import { movieList } from '@/data/data';
 import { getMovie } from '@/utils';
 import Image from 'next/image';
-
-export const generateStaticParams = () => {
-  return movieList.results.map((movie) => ({
-    id: movie.id.toString(),
-  }));
-};
 
 const MovieDetails = async ({ movieId, lang }) => {
   const movie = getMovie(movieId);

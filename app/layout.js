@@ -4,7 +4,7 @@ import Sidebar from '@/components/Sidebar';
 import './globals.css';
 
 export const metadata = {
-  title: 'MovieDB | Home',
+  title: 'Home | MovieDB',
   description: 'MovieDB homepage description',
 };
 
