@@ -28,7 +28,7 @@ const MovieDetails = async ({ movieId, lang }) => {
     <section>
       <div>
         <Image
-          className="w-full object-cover object-top max-h-[300px] lg:max-h-[500px]"
+          className="w-full object-cover rounded object-top max-h-[300px] lg:max-h-[500px]"
           src={backdrop_path}
           width={1200}
           height={500}
@@ -38,7 +38,13 @@ const MovieDetails = async ({ movieId, lang }) => {
 
       <div className="grid grid-cols-12 gap-8 py-12">
         <div className="col-span-2">
-          <Image src={poster_path} width={180} height={265} alt="" />
+          <Image
+            src={poster_path}
+            className="rounded"
+            width={180}
+            height={265}
+            alt=""
+          />
         </div>
         <div className="col-span-8">
           <h2 className="text-2xl font-bold text-slate-300">
