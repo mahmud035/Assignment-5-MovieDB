@@ -1,5 +1,4 @@
 import MovieList from '@/components/MovieList';
-import Sidebar from '@/components/Sidebar';
 import { getDictionary } from './dictionaries/dictionaries';
 
 const HomePage = async ({ params: { lang } }) => {
@@ -8,7 +7,7 @@ const HomePage = async ({ params: { lang } }) => {
 
   return (
     <>
-      <Sidebar sidebar={sidebar} />
+      {/* <Sidebar sidebar={sidebar} /> */}
       <MovieList />
     </>
   );

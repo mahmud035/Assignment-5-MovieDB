@@ -1,5 +1,4 @@
 import MovieDetails from '@/components/MovieDetails';
-import Sidebar from '@/components/Sidebar';
 import { movieList } from '@/data/data';
 import { getMovie } from '@/utils';
 import { notFound } from 'next/navigation';
@@ -42,7 +41,7 @@ const MovieDetailsPage = async ({ params: { movieId, lang } }) => {
 
   return (
     <>
-      <Sidebar sidebar={sidebar} />
+      {/* <Sidebar sidebar={sidebar} /> */}
       <MovieDetails movieId={movieId} lang={lang} />
     </>
   );
