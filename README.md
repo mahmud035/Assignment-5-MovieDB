@@ -1,1 +1,1 @@
-## Assignment-7 : MovieDB - Next Advanced Routing
+## Assignment-7 : MovieDB - Next.js Advanced Routing
