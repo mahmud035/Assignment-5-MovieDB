@@ -14,25 +14,6 @@ const MoviesLayout = async ({ children, params: { lang } }) => {
   const sidebar = dictionary?.sidebar;
 
   return (
-    // TODO: Toggle dark class to switch between dark and light mode
-    // <html lang="en" className="dark">
-    //   <body className="dark:bg-body bg-white font-[Sora] dark:text-white text-dark">
-    //     <Header />
-
-    //     <main>
-    //       <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
-    //         <Sidebar sidebar={sidebar} />
-    //         {children}
-    //       </div>
-    //     </main>
-
-    //     <Footer />
-
-    //     {/* Render Modal */}
-    //     <div id="modal-root-content" />
-    //   </body>
-    // </html>
-
     <>
       <Header />
 

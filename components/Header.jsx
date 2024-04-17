@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import SunIcon from '../public/assets/icons/sun.svg';
 import Ring from '../public/assets/ring.svg';
 import ShoppingCartIcon from '../public/assets/shopping-cart.svg';
 import LanguageSwitcher from './LanguageSwitcher';
 import Logo from './Logo';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Header = () => {
   return (
@@ -22,12 +22,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link
-              className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
-              href="#"
-            >
-              <Image src={SunIcon.src} width={24} height={24} alt="Sun icon" />
-            </Link>
+            <ThemeSwitcher />
           </li>
           <li>
             <Link

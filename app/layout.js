@@ -1,3 +1,4 @@
+import ThemeProvider from '@/contexts/ThemeProvider';
 import './globals.css';
 
 export const metadata = {
@@ -7,10 +8,9 @@ export const metadata = {
 
 const RootLayout = async ({ children }) => {
   return (
-    // TODO: Toggle dark class to switch between dark and light mode
     <html lang="en" className="dark">
       <body className="dark:bg-body bg-white font-[Sora] dark:text-white text-dark">
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
