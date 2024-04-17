@@ -6,6 +6,7 @@ export const GET = async () => {
   return Response.json({
     success: true,
     message: 'Movies Retrieved Successfully',
+    total: movies.length,
     movies: movies,
   });
 };
