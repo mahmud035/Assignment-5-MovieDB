@@ -6,13 +6,13 @@ export const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
   // const preferredThemeMode = localStorage.getItem('themeMode') || 'dark';
-  let preferredThemeMode = 'dark';
+  let preferredThemeMode;
 
   if (typeof window !== 'undefined') {
     preferredThemeMode = localStorage.getItem('themeMode');
   }
 
-  const [themeMode, setThemeMode] = useState(preferredThemeMode);
+  const [themeMode, setThemeMode] = useState(preferredThemeMode || 'dark');
 
   const lightTheme = () => {
     setThemeMode('light');

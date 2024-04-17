@@ -20,6 +20,12 @@ const ThemeSwitcher = () => {
         darkTheme();
         localStorage.setItem('themeMode', 'dark');
       }
+    } else {
+      if (themeMode === 'dark') {
+        lightTheme();
+      } else {
+        darkTheme();
+      }
     }
   };
 
