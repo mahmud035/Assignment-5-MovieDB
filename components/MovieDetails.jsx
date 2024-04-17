@@ -25,7 +25,7 @@ const MovieDetails = async ({ movieId, lang }) => {
           src={backdrop_path}
           width={1200}
           height={500}
-          alt=""
+          alt="backdrop_path"
         />
       </div>
 
@@ -36,7 +36,7 @@ const MovieDetails = async ({ movieId, lang }) => {
             className="rounded"
             width={180}
             height={265}
-            alt=""
+            alt="poster_path"
           />
         </div>
         <div className="col-span-8">

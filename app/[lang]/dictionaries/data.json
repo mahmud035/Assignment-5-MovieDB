@@ -12,7 +12,7 @@
     "release_date": "1994-09-23",
     "title": "The Shawshank Redemption",
     "video": false,
-    "vote_average": 9.3,
+    "vote_average": 5,
     "vote_count": 21117
   },
   {
@@ -28,7 +28,7 @@
     "release_date": "2008-07-18",
     "title": "The Dark Knight",
     "video": false,
-    "vote_average": 9.0,
+    "vote_average": 4.4,
     "vote_count": 24332
   },
   {
@@ -44,7 +44,7 @@
     "release_date": "2010-07-16",
     "title": "Inception",
     "video": false,
-    "vote_average": 8.8,
+    "vote_average": 5,
     "vote_count": 25793
   },
   {
@@ -60,7 +60,7 @@
     "release_date": "2024-03-02",
     "title": "Kung Fu Panda 4",
     "video": false,
-    "vote_average": 6.938,
+    "vote_average": 4.4,
     "vote_count": 379
   },
   {
@@ -76,7 +76,7 @@
     "release_date": "2012-05-04",
     "title": "The Avengers",
     "video": false,
-    "vote_average": 8.0,
+    "vote_average": 5,
     "vote_count": 14357
   },
   {
@@ -92,7 +92,7 @@
     "release_date": "2023-7-19",
     "title": "The Roundup",
     "video": false,
-    "vote_average": 8.8,
+    "vote_average": 3.4,
     "vote_count": 17712
   }
 ]
