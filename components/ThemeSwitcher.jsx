@@ -12,12 +12,14 @@ const ThemeSwitcher = () => {
 
   // NOTE: Toggle Theme Mode
   const handleToggleTheme = (themeMode) => {
-    if (themeMode === 'dark') {
-      lightTheme();
-      localStorage.setItem('themeMode', 'light');
-    } else {
-      darkTheme();
-      localStorage.setItem('themeMode', 'dark');
+    if (typeof window !== 'undefined') {
+      if (themeMode === 'dark') {
+        lightTheme();
+        localStorage.setItem('themeMode', 'light');
+      } else {
+        darkTheme();
+        localStorage.setItem('themeMode', 'dark');
+      }
     }
   };
 

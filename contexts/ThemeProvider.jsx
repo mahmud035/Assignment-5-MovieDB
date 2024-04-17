@@ -5,7 +5,13 @@ import { createContext, useEffect, useState } from 'react';
 export const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  const preferredThemeMode = localStorage.getItem('themeMode') || 'dark';
+  // const preferredThemeMode = localStorage.getItem('themeMode') || 'dark';
+  let preferredThemeMode = 'dark';
+
+  if (typeof window !== 'undefined') {
+    preferredThemeMode = localStorage.getItem('themeMode');
+  }
+
   const [themeMode, setThemeMode] = useState(preferredThemeMode);
 
   const lightTheme = () => {
