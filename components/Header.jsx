@@ -1,17 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import SunIcon from '../public/assets/icons/sun.svg';
-import Logo from '../public/assets/logo.svg';
 import Ring from '../public/assets/ring.svg';
 import ShoppingCartIcon from '../public/assets/shopping-cart.svg';
+import LanguageSwitcher from './LanguageSwitcher';
+import Logo from './Logo';
 
 const Header = () => {
   return (
     <header>
       <nav className="container flex items-center justify-between py-6 space-x-10">
-        <Link href="/">
-          <Image src={Logo.src} width={139} height={26} alt="Logo" />
-        </Link>
+        <Logo />
 
         <ul className="flex items-center space-x-5">
           <li>
@@ -43,7 +42,9 @@ const Header = () => {
               />
             </Link>
           </li>
-          <li>{/* <SwitchLanguage /> */}</li>
+          <li>
+            <LanguageSwitcher />
+          </li>
         </ul>
       </nav>
     </header>

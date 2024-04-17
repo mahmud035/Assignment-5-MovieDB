@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import StarIcon from '../public/assets/star.svg';
-import TagIcon from '../public/assets/tag.svg';
+import NavigateMovieDetails from './NavigateMovieDetails';
 
 const MovieCard = ({ movie }) => {
   const { id, poster_path, title } = movie || {};
@@ -25,13 +24,8 @@ const MovieCard = ({ movie }) => {
           <Image src={StarIcon.src} width={14} height={14} alt="Star icon" />
           <Image src={StarIcon.src} width={14} height={14} alt="Star icon" />
         </div>
-        <Link
-          href={`/movies/${id}`}
-          className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
-        >
-          <Image src={TagIcon.src} width={14} height={14} alt="Tag icon" />
-          <span>Details</span>
-        </Link>
+
+        <NavigateMovieDetails id={id} />
       </figcaption>
     </figure>
   );
